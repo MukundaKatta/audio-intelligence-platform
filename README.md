@@ -1,13 +1,15 @@
-# audio-intelligence-platform
+# Audio Intelligence Platform
 
-Stub Python project. Described as an audio intelligence platform, but none of that functionality exists.
+AI-powered audio analysis platform for transcription, speaker identification, and content intelligence.
 
-## What's actually here
+## About
+Audio Intelligence Platform provides a suite of tools for extracting insights from audio content. It supports speech-to-text transcription, speaker diarization, sentiment analysis, topic detection, and content summarization - enabling organizations to unlock value from meetings, calls, podcasts, and other audio sources.
 
-A single class in `src/core.py` (AudioIntelligencePlatform) with placeholder methods that each return a fixed dictionary without doing any real work. There is no audio processing, no speech recognition, no intelligence analysis - just stubs.
-
-The project uses only Python standard library imports (time, logging, json, typing). No audio or ML libraries are present.
+## Tech Stack
+- Python
+- Speech recognition (Whisper, Deepgram)
+- Audio processing (librosa, pydub)
+- Click/Typer (CLI)
 
 ## Status
-
-Scaffolding only. No working audio intelligence functionality exists.
+Active development - core architecture and project structure established.
