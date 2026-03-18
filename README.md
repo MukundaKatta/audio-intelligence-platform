@@ -1,43 +1,13 @@
 # audio-intelligence-platform
 
-**Audio analysis platform — transcription, speaker ID, sentiment, music understanding**
+Stub Python project. Described as an audio intelligence platform, but none of that functionality exists.
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
+## What's actually here
 
-## Install
-```bash
-pip install -e ".[dev]"
-```
+A single class in `src/core.py` (AudioIntelligencePlatform) with placeholder methods that each return a fixed dictionary without doing any real work. There is no audio processing, no speech recognition, no intelligence analysis - just stubs.
 
-## Quick Start
-```python
-from src.core import AudioIntelligencePlatform
- instance = AudioIntelligencePlatform()
-r = instance.process(input="test")
-```
+The project uses only Python standard library imports (time, logging, json, typing). No audio or ML libraries are present.
 
-## CLI
-```bash
-python -m src status
-python -m src run --input "data"
-```
+## Status
 
-## API
-| Method | Description |
-|--------|-------------|
-| `process()` | Process |
-| `analyze()` | Analyze |
-| `transform()` | Transform |
-| `validate()` | Validate |
-| `export()` | Export |
-| `get_stats()` | Get stats |
-| `get_stats()` | Get stats |
-| `reset()` | Reset |
-
-## Test
-```bash
-pytest tests/ -v
-```
-
-## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+Scaffolding only. No working audio intelligence functionality exists.
