@@ -1,29 +1,62 @@
-# audio-intelligence-platform
+# Audio Intelligence Platform
 
-**Audio analysis — transcription, speaker ID, sentiment**
+Audio analysis — transcription, speaker ID, sentiment
 
-## Install
+## Features
+
+- Api
+Audio Processor
+Music Analyzer
+Sentiment Analyzer
+Speaker Diarizer
+Transcriber
+
+## Tech Stack
+
+- **Language:** Python
+- **Framework:** FastAPI
+- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
+- **Containerization:** Docker + Docker Compose
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11+
+- Docker & Docker Compose (optional)
+
+### Installation
+
 ```bash
-pip install -e '.[dev]'
+git clone https://github.com/MukundaKatta/audio-intelligence-platform.git
+cd audio-intelligence-platform
+pip install -r requirements.txt
 ```
 
-## Quick Start
-```python
-from src import __version__
+### Running
+
+```bash
+uvicorn app.main:app --reload
 ```
 
-## Modules
-- **transcriber**
-- **speaker_diarizer**
-- **sentiment_analyzer**
-- **music_analyzer**
-- **audio_processor**
-- **api**
+### Docker
 
-## Docker
 ```bash
-docker compose up
+docker-compose up
+```
+
+## Project Structure
+
+```
+audio-intelligence-platform/
+├── src/           # Source code
+├── tests/         # Test suite
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
 ```
 
 ## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+
+MIT
